@@ -159,6 +159,25 @@
   .sched-row .ag{flex:1;}
   .sched-row .who{font-size:12px;color:var(--ink-soft);text-align:right;min-width:72px;}
 
+  .refcard{
+    display:flex;gap:14px;align-items:flex-start;text-decoration:none;
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:15px 16px;margin-bottom:11px;box-shadow:var(--shadow);
+    transition:border-color .2s,transform .1s;
+  }
+  .refcard:hover{border-color:var(--accent);}
+  .refcard:active{transform:scale(.995);}
+  .ref-ico{
+    flex-shrink:0;width:42px;height:42px;border-radius:10px;
+    display:grid;place-items:center;font-size:18px;color:#fff;
+  }
+  .ref-yt{background:#c0392b;}
+  .ref-bk{background:var(--gold);}
+  .ref-body{display:flex;flex-direction:column;}
+  .ref-t{font-weight:800;font-size:15.5px;color:var(--ink);}
+  .ref-d{font-size:13px;color:var(--ink-soft);margin-top:3px;line-height:1.6;}
+  .ref-go{font-size:13px;font-weight:700;color:var(--accent);margin-top:7px;}
+
   .cheer{
     margin-top:30px;background:linear-gradient(135deg,#fbfaf6,var(--accent-soft));
     border:1px solid #cfe3da;border-radius:14px;padding:22px 20px;text-align:center;
@@ -359,6 +378,33 @@
         <div class="sched-row"><span class="tm">15 分</span><span class="ag">委員回饋與可以更好的建議</span><span class="who">訪查委員</span></div>
       </div>
     </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">5</div>
+      <h2>操作參考資料</h2>
+      <span class="tag">國健署官方</span>
+    </div>
+    <p class="sec-intro">準備過程中如果想再熟悉操作流程，這兩份國健署官方資源很實用，歡迎隨時參考。</p>
+
+    <a class="refcard" href="https://www.youtube.com/watch?v=Wns-UimOWNY" target="_blank" rel="noopener">
+      <span class="ref-ico ref-yt">▶</span>
+      <span class="ref-body">
+        <span class="ref-t">ICOPE 初評操作示範影片</span>
+        <span class="ref-d">影片帶您快速了解長者內在能力的初步評估怎麼進行，適合人員訓練與複習。</span>
+        <span class="ref-go">在 YouTube 觀看 →</span>
+      </span>
+    </a>
+
+    <a class="refcard" href="https://health99.hpa.gov.tw/health99en/HealthEducation/Detail/8715?nodeId=12" target="_blank" rel="noopener">
+      <span class="ref-ico ref-bk">📖</span>
+      <span class="ref-body">
+        <span class="ref-t">ICOPE 操作手冊電子書</span>
+        <span class="ref-d">健康九九＋網站的操作手冊，完整說明評估步驟與注意事項，可線上閱讀。</span>
+        <span class="ref-go">前往健康九九＋閱讀 →</span>
+      </span>
+    </a>
   </section>
 
   <div class="cheer">
